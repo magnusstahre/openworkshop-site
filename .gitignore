@@ -1,0 +1,11 @@
+*~
+*.log
+*.sqlite3
+Capfile
+config/deploy.rb
+database.yml
+tmp/cache
+tmp/pids
+tmp/sessions
+tmp/sockets
+
