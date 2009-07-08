@@ -1,0 +1,34 @@
+<h1>Listing workshops</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Location</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zip</th>
+    <th>Country</th>
+    <th>Date and time</th>
+  </tr>
+
+<% @workshops.each do |workshop| %>
+  <tr>
+    <td><%=h workshop.name %></td>
+    <td><%=h workshop.location %></td>
+    <td><%=h workshop.address %></td>
+    <td><%=h workshop.city %></td>
+    <td><%=h workshop.state %></td>
+    <td><%=h workshop.zip %></td>
+    <td><%=h workshop.country %></td>
+    <td><%=h workshop.date_and_time %></td>
+    <td><%= link_to 'Show', workshop %></td>
+    <td><%= link_to 'Edit', edit_workshop_path(workshop) %></td>
+    <td><%= link_to 'Destroy', workshop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New workshop', new_workshop_path %>

@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%=h @workshop.name %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @workshop.location %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @workshop.address %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @workshop.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%=h @workshop.state %>
+</p>
+
+<p>
+  <b>Zip:</b>
+  <%=h @workshop.zip %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%=h @workshop.country %>
+</p>
+
+<p>
+  <b>Date and time:</b>
+  <%=h @workshop.date_and_time %>
+</p>
+
+
+<%= link_to 'Edit', edit_workshop_path(@workshop) %> |
+<%= link_to 'Back', workshops_path %>
