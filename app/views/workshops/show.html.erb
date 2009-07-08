@@ -38,6 +38,10 @@
   <%=h @workshop.date_and_time %>
 </p>
 
+<p>
+  <b>Description:</b>
+  <%=h @workshop.description %>
+</p>
 
 <%= link_to 'Edit', edit_workshop_path(@workshop) %> |
 <%= link_to 'Back', workshops_path %>

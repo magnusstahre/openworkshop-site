@@ -36,6 +36,10 @@
     <%= f.datetime_select :date_and_time %>
   </p>
   <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
     <%= f.submit 'Create' %>
   </p>
 <% end %>

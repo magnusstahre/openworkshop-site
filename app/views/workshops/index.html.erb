@@ -10,6 +10,7 @@
     <th>Zip</th>
     <th>Country</th>
     <th>Date and time</th>
+    <th>Description</th>
   </tr>
 
 <% @workshops.each do |workshop| %>
@@ -22,6 +23,7 @@
     <td><%=h workshop.zip %></td>
     <td><%=h workshop.country %></td>
     <td><%=h workshop.date_and_time %></td>
+    <td><%=h workshop.description %></td>
     <td><%= link_to 'Show', workshop %></td>
     <td><%= link_to 'Edit', edit_workshop_path(workshop) %></td>
     <td><%= link_to 'Destroy', workshop, :confirm => 'Are you sure?', :method => :delete %></td>
