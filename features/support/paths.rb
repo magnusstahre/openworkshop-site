@@ -11,6 +11,9 @@ module NavigationHelpers
     when /the homepage/
       '/'
     
+    when /workshops/
+      '/workshops'
+    
     # Add more mappings here.
     # Here is a more fancy example:
     #

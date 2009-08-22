@@ -3,6 +3,10 @@ require File.expand_path(File.join(File.dirname(__FILE__), "..", "support", "pat
 # Commonly used webrat steps
 # http://github.com/brynary/webrat
 
+Then /^I should see (\d+) workshops$/ do |count|
+  response.should have_selector("#workshops_table tr", :count => count.to_i + 1)  
+end
+
 Given /^I am on (.+)$/ do |page_name|
   visit path_to(page_name)
 end
